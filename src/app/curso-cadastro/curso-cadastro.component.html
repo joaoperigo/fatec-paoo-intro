@@ -1,0 +1,9 @@
+
+  <div class="form-group">
+    <label for="cursoInput">Adicionar novo curso</label>
+    <input type="text" class="form-control" id="cursoInput" #cursoInput>
+  </div>
+
+  <button class="btn btn-primary btn-block mt-3" (click)="adicionar(cursoInput.value)">
+    Adicionar
+  </button>

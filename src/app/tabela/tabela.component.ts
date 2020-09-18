@@ -11,4 +11,7 @@ export class TabelaComponent {
     { nome: "Eventos" },
     { nome: "Comercio exterior" },
   ];
+  onAdicionarCurso(curso) {
+    this.cursos = [curso, ...this.cursos]
+  }
 }

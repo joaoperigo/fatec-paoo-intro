@@ -6,8 +6,15 @@
           <td>Cursos fatec</td>
         </thead>
         <tbody>
+          <tr>
+            <td>
+                <!-- Componente ex2 A -->
+                <app-curso-cadastro (cursoAdicionado)="onAdicionarCurso($event)"></app-curso-cadastro>
+            </td>
+          </tr>
           <tr *ngFor="let curso of cursos">
-            <td>{{curso.nome}}</td>
+            <!-- Componente ex2 B -->
+            <app-curso-exibe [curso] = "curso"></app-curso-exibe>
           </tr>
         </tbody>
       </table>
