@@ -5,11 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
-<body>
+<body [ngClass]="changeMode()">
+  <button type="submit" class="btn btn-primary darkmode" (click)="activateChange()">Change Mode</button>
   <!-- Componente ex1 A -->
   <app-cabecalho></app-cabecalho>
-  <!-- Componente ex1 B -->
-  <app-tabela></app-tabela>
+  <div class="container mt-5" >
+    <div class="row">
+      <div class="col-md-6">
+        <!-- Componente ex1 B -->
+        <app-tabela></app-tabela>
+      </div>
+      <div class="col-md-6">
+        <!-- Componente ex3 c -->
+        <app-inserir-aluno></app-inserir-aluno>
+      </div>
+    </div>
+  </div>
 
 </body>
 </html>
@@ -29,3 +40,14 @@ cursos. Use dois componentes Angular: um deles exibe a lista de cursos. O outro 
 exibir os campos necessários para a entrada de dados e o botão que, quando clicado, realizar a
 inserção. Faça a comunicação dos componentes utilizando binding com @Input e @Output.
 2. Liste os cursos com *ngFor. -->
+
+<!-- 1. Escolha um componente do seu projeto e aplique a ele estilos CSS usando ngStyle. Defina um
+método que devolve as regras desejadas.
+2. Escolha um componente do seu projeto e aplique a ele classes CSS usando ngClass. Use a
+versão com um objeto JSON. As chaves devem ser nomes de classes e os valores associados
+devem ser valores booleanos que indicam se elas devem ser aplicadas ou não.
+3. Adicione um nova página ao site. Ela permite a inserção de alunos vinculados a um curso.
+Alunos têm nome, idade e e-mail. A página permite a seleção do curso a que o aluno ficará
+vinculado usando um “select” HTML. Construa a página usando um form Angular (sem two way
+data binding). Além do form, a página exibe a lista de alunos cadastrados (com um simples
+ngFor que gera divs com a classe card do Bootstrap aplicada). -->

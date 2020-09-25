@@ -1,0 +1,54 @@
+<div class="container-fluid">
+  <div class="row">
+    <form #alunoForm="ngForm"  (ngSubmit)="salvar(alunoForm)">
+      <div class="row">
+        <div class="form-group col-12">
+          <label for="nomeInput">Nome</label>
+          <input id="nomeInput" type="text" placeholder="nome" class="form-control p-4" name="nome" [(ngModel)]="aluno.nome">
+        </div>
+      </div>
+
+      <div class="row">
+
+        <div class="form-group col-md-4">
+          <label for="idadeInput">Idade</label>
+          <input id="idadeInput" type="text" placeholder="idade" class="form-control p-4" name="idade" [(ngModel)]="aluno.idade">
+        </div>
+
+        <div class="form-group col-md-4">
+          <label for="emailInput">Email</label>
+          <input id="emailInput" type="text" placeholder="email" class="form-control p-4" name="email" [(ngModel)]="aluno.email">
+        </div>
+
+        <div class="form-group col-md-4">
+          <label for="cursoAlunoInput"> Cursos</label>
+          <select id="cursoAlunoInput" class="form-control" name="curso" [(ngModel)]="aluno.curso">
+            <option value="">Selecione</option>
+            <option *ngFor="let c of cursos">{{c}}</option>
+          </select>
+        </div>
+
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary btn-block">Enviar</button>
+        </div>
+      </div>
+
+    </form>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6 mt-5" *ngFor="let aluno of alunos">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Nome: {{aluno.nome}}</h5>
+          <p class="card-text">Idade: {{aluno.idade}}<br> Email: {{aluno.email}}<br> Curso: {{aluno.curso}}</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+      </div>
+  </div>
+
+</div>

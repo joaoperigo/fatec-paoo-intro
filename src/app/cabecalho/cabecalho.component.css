@@ -1,3 +1,17 @@
 #cabecalho {
   background-color: #efefef;
 }
+.cabecalho {
+  padding: 0 0 300px 0;
+  margin: 0;
+  font-size: 1.8rem;
+  background-color: #f4f4f4;
+}
+.par {
+  background-color: #450092;
+  color: #f4f4f4;
+}
+.impar {
+  background-color: #348756;
+  color: #f4f4f4;
+}

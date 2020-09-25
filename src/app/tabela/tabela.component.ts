@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Output } from '@angular/core';
 
 @Component({
   selector: 'app-tabela',
@@ -13,5 +13,13 @@ export class TabelaComponent {
   ];
   onAdicionarCurso(curso) {
     this.cursos = [curso, ...this.cursos]
+  }
+  obterEstilos() {
+    return {
+      backgroundColor: '#666666',
+      padding: '40px',
+      color: '#ffffff',
+      fontSize: '2rem'
+    }
   }
 }
