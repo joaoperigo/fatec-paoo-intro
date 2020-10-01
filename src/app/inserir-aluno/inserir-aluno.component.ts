@@ -14,7 +14,12 @@ export class InserirAlunoComponent {
   ]
 
   salvar (alunoForm) {
-    this.alunos = [this.aluno, ...this.alunos];
+    this.alunos.push({
+      nome: this.aluno.nome,
+      idade: this.aluno.idade,
+      email: this.aluno.email,
+      curso: this.aluno.curso,
+    });
   }
 
   cursos = [

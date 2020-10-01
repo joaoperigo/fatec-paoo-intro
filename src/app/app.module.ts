@@ -8,6 +8,7 @@ import { TabelaComponent } from './tabela/tabela.component';
 import { CursoCadastroComponent } from './curso-cadastro/curso-cadastro.component';
 import { CursoExibeComponent } from './curso-exibe/curso-exibe.component';
 import { InserirAlunoComponent } from './inserir-aluno/inserir-aluno.component';
+import { MudaCorFonteDirective } from './muda-cor-fonte.directive';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { InserirAlunoComponent } from './inserir-aluno/inserir-aluno.component';
     TabelaComponent,
     CursoCadastroComponent,
     CursoExibeComponent,
-    InserirAlunoComponent
+    InserirAlunoComponent,
+    MudaCorFonteDirective
   ],
   imports: [
     BrowserModule,

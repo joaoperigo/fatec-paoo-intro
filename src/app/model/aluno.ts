@@ -1,6 +1,6 @@
 export class Aluno {
   nome: string;
-  fone: string;
+  idade: string;
   email: string;
-  profissao: string;
+  curso: string;
 }

@@ -1,4 +1,4 @@
-      <table id="tabela" class="table table-striped table-hover text-center">
+      <table id="tabela" class="table table-striped table-hover text-center" appMudaCorFonte corFonteDir="white">
         <thead class="text-uppercase font-weight-bold">
           <td>Cursos fatec</td>
         </thead>
@@ -6,12 +6,13 @@
           <tr>
             <td  [ngStyle]="obterEstilos()">
                 <!-- Componente ex2 A -->
+                <!-- cursoAdicionado vem doutput -->
                 <app-curso-cadastro (cursoAdicionado)="onAdicionarCurso($event)"></app-curso-cadastro>
             </td>
           </tr>
           <tr *ngFor="let curso of cursos">
             <!-- Componente ex2 B -->
-            <app-curso-exibe [curso] = "curso"></app-curso-exibe>
+            <td><app-curso-exibe [curso] = "curso"></app-curso-exibe></td>
           </tr>
         </tbody>
       </table>
