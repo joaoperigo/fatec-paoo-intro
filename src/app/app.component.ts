@@ -16,13 +16,16 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'ex1-joao-perigo-introducao-angular-componentes';
   valor=0;
+  bgColorCol="#1299f4"
   activateChange() {
     //muda valor para bg alternante
     if(this.valor==0)
       this.valor = 1;
     else
       this.valor = 0;
+      //alert(this.bolFonte);
   }
+ 
   changeMode() {
     return {
       'dark': this.valor % 2 == 1,

@@ -1,12 +1,12 @@
-<div id="cabecalho" class="container-fluid" [ngClass]="obterClassesCabecalho()">
+<div id="cabecalho" class="container-fluid" [ngClass]="obterClassesCabecalho()" >
   <div class="row">
     <div class="col-md-8 d-flex align-items-center p-md-5">
       <div>
         <h1 class="text-left" [ngClass]="randomBG()">Trabalho do João Périgo</h1>
-        <h2 class="text-left">Fatec Ipiranga</h2>
+        <h2 class="text-left" [appMudaCorFonte]="corFonte">Fatec Ipiranga</h2>
       </div>
     </div>
-    <div class="col-md-4">
+    <div class="col-md-4 p-0">
       <img class="w-100 img-fluid mx-auto d-block" src="assets/img/logo.jpg" alt="Logo Fatec">
     </div>
   </div>

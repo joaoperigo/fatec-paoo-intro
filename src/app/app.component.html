@@ -6,16 +6,16 @@
   <title>Document</title>
 </head>
 <body [ngClass]="changeMode()">
-  <button type="submit" class="btn btn-primary darkmode" (click)="activateChange()">Change Mode</button>
+  <button type="submit" class="btn btn-primary darkmode" (click)="activateChange()" (click)="apiCorCol.hoverMouse()">Change Mode</button>
   <!-- Componente ex1 A -->
   <app-cabecalho></app-cabecalho>
   <div class="container mt-5" >
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-md-6 coluna p-4" [appMudaCorColuna]="bgColorCol" #apiCorCol="corColNoComponente">
         <!-- Componente ex1 B -->
         <app-tabela></app-tabela>
       </div>
-      <div class="col-md-6">
+      <div class="col-md-6 coluna p-4" [appMudaCorColuna]="bgColorCol" #apiCorCol="corColNoComponente">
         <!-- Componente ex3 c -->
         <app-inserir-aluno></app-inserir-aluno>
       </div>

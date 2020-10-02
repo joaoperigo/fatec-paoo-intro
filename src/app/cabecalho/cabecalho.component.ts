@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./cabecalho.component.css']
 })
 export class CabecalhoComponent {
+  corFonte: string = "red";
   randomBG() {
     let valor;
     valor = Math.round(Math.random() * 100) + 1;

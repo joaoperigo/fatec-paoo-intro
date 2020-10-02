@@ -4,6 +4,9 @@
   top: 50px;
   left: 50px;
 }
+.coluna {
+  background-color: #f4f4f4;
+}
 .dark {
   background-color: black;
 }

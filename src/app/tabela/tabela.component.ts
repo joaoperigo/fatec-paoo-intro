@@ -9,7 +9,6 @@ import { Curso } from '../model/curso';
 })
 export class TabelaComponent {
   curso: Curso = new Curso();
-  corFonte: string = "white";
   cursos = [
     { nome: "Analise e desenvolvimento de sistemas" },
     { nome: "Eventos" },

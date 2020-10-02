@@ -23,10 +23,10 @@ export class InserirAlunoComponent {
   }
 
   cursos = [
-    'Engenheiro',
-    'Preofessor',
-    'Quimico',
-    'Zoologo'
+    'Curso 1',
+    'Curso 2',
+    'Curso 3',
+    'Curso 4'
   ];
 
 }

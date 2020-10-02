@@ -120,6 +120,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "ex1-joao-perigo-introducao-angular-componentes"
+    }
+  },
+  "defaultProject": "ex1-joao-perigo-introducao-angular-componentes",
+  "cli": {
+    "analytics": "47c25545-347e-48cc-bece-53b92627342f"
+  }
 }

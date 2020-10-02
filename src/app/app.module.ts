@@ -9,6 +9,7 @@ import { CursoCadastroComponent } from './curso-cadastro/curso-cadastro.componen
 import { CursoExibeComponent } from './curso-exibe/curso-exibe.component';
 import { InserirAlunoComponent } from './inserir-aluno/inserir-aluno.component';
 import { MudaCorFonteDirective } from './muda-cor-fonte.directive';
+import { MudaCorColunaDirective } from './muda-cor-coluna.directive';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { MudaCorFonteDirective } from './muda-cor-fonte.directive';
     CursoCadastroComponent,
     CursoExibeComponent,
     InserirAlunoComponent,
-    MudaCorFonteDirective
+    MudaCorFonteDirective,
+    MudaCorColunaDirective
   ],
   imports: [
     BrowserModule,
